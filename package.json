@@ -1,0 +1,26 @@
+{
+  "name": "llmos-mcp-stack",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mcp-use": "^1.20.5",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0"
+  },
+  "scripts": {
+    "dev:ipa": "tsx apps/ipa-ui/src/server.ts",
+    "dev:orchestrator": "tsx apps/orchestrator/src/server.ts",
+    "dev:system": "tsx services/mcp-system/src/server.ts",
+    "dev:files": "tsx services/mcp-files/src/server.ts",
+    "dev:rag": "tsx services/mcp-rag/src/server.ts",
+    "dev:automation": "tsx services/mcp-automation/src/server.ts",
+    "dev:security": "tsx services/mcp-security/src/server.ts"
+  }
+}
